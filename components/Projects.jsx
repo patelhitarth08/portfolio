@@ -10,13 +10,13 @@ import "react-image-gallery/styles/css/image-gallery.css";
 const Projects = () => {
   const images = [
     {
-      original: "/assets/images/1.png",
+      original: "/assets/images/Hitarth.jpg",
     },
     {
-      original: "/assets/images/2.png",
+      original: "/assets/images/Hitarth.jpg",
     },
     {
-      original: "/assets/images/3.png",
+      original: "/assets/images/Hitarth.jpg",
     },
   ];
   return (
