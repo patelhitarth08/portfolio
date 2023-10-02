@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+      .extra-container {
+            @apply flex flex-col justify-center items-center h-screen
+      }
+
+      .extra-container h1 {
+            @apply text-center text-3xl mb-16 font-extrabold
+      }
+}

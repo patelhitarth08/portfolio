@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+      .skills-container {
+            @apply flex justify-start flex-col h-screen mx-auto mb-60
+      }
+
+      .skills-heading {
+            @apply mt-44 mb-20 mx-14
+      }
+
+      .skills-heading h1 {
+            @apply text-2xl md:text-3xl font-extrabold
+      }
+
+      .skills-heading h2 {
+            @apply text-xl md:text-2xl
+      }
+
+      .skill-sections {
+            @apply grid grid-cols-1 md:grid-cols-4 mx-16 md:mx-14
+      }
+
+      .section {
+            @apply flex flex-col text-start
+      }
+
+      .section .heading {
+            @apply text-xl md:text-2xl font-bold mb-5
+      }
+
+      .section .icons {
+            @apply grid grid-cols-3 text-2xl md:text-3xl mr-5 md:mr-6
+      }
+
+      .section .icons div .icon-name {
+            @apply opacity-0 transition-opacity bg-gray-800 text-center text-xs text-gray-100 rounded-md mt-0.5 py-1 px-1.5 left-1/2
+      }
+
+      .section .icons div:hover .icon-name {
+            @apply opacity-100
+      }
+
+}

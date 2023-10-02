@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+      .left-container {
+            @apply flex justify-end items-start md:items-center my-24 bg-transparent
+      }
+
+      .left-labels {
+            @apply py-10 block text-center rounded-e-2xl bg-blue-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border-e-4 border-blue-800
+      }
+
+      .left-label {
+            @apply p-4 text-xl text-black
+      }
+
+
+}

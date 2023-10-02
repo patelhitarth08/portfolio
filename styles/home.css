@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+      .home-container {
+            @apply flex justify-center flex-col md:flex-row-reverse items-center
+      }
+
+      .image {
+            @apply p-5
+      }
+
+      .text {
+            @apply text-lg md:text-3xl p-10 md:p-5 text-center font-bold
+      }
+
+      .text span {
+            @apply text-blue-500
+      }
+
+      .profession:before {
+            content: "Web-Developer";
+            animation: animate infinite 3s;
+            @apply text-blue-500
+      }
+
+      @keyframes animate {
+
+            33% {
+                  content: "Coder";
+            }
+
+            67% {
+                  content: "Programmer";
+            }
+
+      }
+}

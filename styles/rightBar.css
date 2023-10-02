@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+      .right-container {
+            @apply flex justify-end items-center my-24
+      }
+
+      .right-labels {
+            @apply py-10 text-center rounded-s-2xl bg-blue-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border-s-4 border-blue-800
+      }
+
+      .right-label {
+            @apply p-4 text-xl
+      }
+
+
+}

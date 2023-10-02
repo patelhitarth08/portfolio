@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: duhacks;
+    src: url(/public/assets/fonts/Hubot-Sans-Font/hubot_sans/Hubot-Sans/TTF/Hubot-Sans-ExtraBold.ttf);
+}
+
+@layer base {
+    * {
+        @apply font-duhacks
+    }
+
+    html {
+        @apply bg-[#fbf8f3] scroll-smooth
+    }
+
+    .layout-content {
+        @apply flex content-center items-center justify-center
+    }
+
+    .scrollable-content {
+        @apply flex-grow overflow-y-auto
+    }
+}

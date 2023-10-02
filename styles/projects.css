@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+      .project-container {
+            @apply text-black py-12;
+      }
+
+      .project-container h1 {
+            @apply text-3xl font-bold text-center mb-6;
+      }
+
+      .gallery {
+            @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full;
+      }
+
+      /* Adjust card styles for different screen sizes */
+      .gallery>div {
+            @apply bg-[#FEFEFD] p-4 flex flex-col items-center justify-start space-y-4 shadow-lg rounded-lg;
+      }
+
+      @screen md {
+            .gallery>div {
+                  @apply p-6;
+            }
+
+            .gallery {
+                  @apply p-3;
+            }
+
+            .gallery h2 {
+                  @apply text-xl;
+            }
+
+            .gallery {
+                  @apply text-gray-500;
+            }
+
+            .gallery {
+                  @apply text-sm;
+            }
+      }
+}

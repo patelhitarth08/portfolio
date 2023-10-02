@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+      .education-container {
+            @apply flex flex-col justify-center m-24 items-center h-screen
+      }
+
+      .education-container h1 {
+            @apply text-center text-3xl font-bold m-16 xl:m-24
+      }
+
+      .card-container {
+            @apply grid xl:grid-cols-3 gap-1 xl:gap-10 items-center h-auto
+      }
+
+      .card {
+            @apply w-56 h-52 xl:w-72 xl:h-72 m-4 p-2 text-center relative overflow-hidden transition-transform duration-300 ease-in-out transform translate-y-0 rounded-xl bg-blue-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 border border-gray-100
+      }
+
+      .card:hover {
+            @apply translate-y-[-10px]
+      }
+
+      .card-display {
+            @apply flex items-center justify-center h-full text-2xl xl:text-3xl font-bold;
+      }
+
+      .card-hover {
+            @apply absolute inset-0 bg-white opacity-0 transition-opacity duration-300 ease-in-out transform translate-y-full flex items-center justify-center text-center flex-col p-4 space-y-2;
+      }
+
+      .card:hover .card-display {
+            opacity: 0;
+      }
+
+      .card:hover .card-hover {
+            opacity: 1;
+            @apply translate-y-0 bg-blue-600 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100
+      }
+}
