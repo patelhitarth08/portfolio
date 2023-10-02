@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import "../styles/leftbar.css";
+import "../styles/leftBar.css";
 
 const LeftBar = () => {
   const [isOpen, setIsOpen] = useState(false);
